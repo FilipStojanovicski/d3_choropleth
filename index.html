@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <title>Choropleth Map</title>
+  </head>
+  <body>
+
+    <div id="main">
+      <h1 id="title">United States Educational Attainment</h1>
+      <div id="description">
+        Percentage of adults age 25 and older with a bachelor's degree or higher
+        (2010-2014)
+      </div>
+        <!-- Create a div where the graph will take place -->
+        <div id="graph"></div>
+    </div>
+    <!-- We will put our React component inside this div. -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    
+    <!-- D3.js -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script> const div = d3.selectAll("div");</script>
+
+    <!-- Topojson -->
+    <script src="https://unpkg.com/topojson-client@3"></script>
+
+    <script src="main.js"></script>
+
+    <!-- FreeCodeCamp Tests -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  </body>
+</html>
